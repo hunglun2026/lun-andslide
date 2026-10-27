@@ -7,7 +7,8 @@ let fail = 0;
 const eq = (name: string, ok: boolean, extra = "") => { if (!ok) fail++; console.log(`${ok ? "ok  " : "FAIL"} ${name}${ok ? "" : "  " + extra}`); };
 
 const win: any = { LS: { shuffle: (a: any[]) => a.slice(), pick: (a: any[], n: number) => a.slice(0, n) } };
-vm.runInNewContext(readFileSync("public/js/knowledge.js", "utf8"), { window: win });
+// 瀏覽器裡 window.LS 同時就是全域 LS，所以兩個都要給（Node 版本不同時，只給 window 會報 LS is not defined）
+vm.runInNewContext(readFileSync("public/js/knowledge.js", "utf8"), { window: win, LS: win.LS });
 const K = win.LS.K;
 
 eq("12 項前兆", K.SIGNS.length === 12, String(K.SIGNS.length));
