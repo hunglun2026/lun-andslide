@@ -1,0 +1,15 @@
+{
+  "name": "landslide-detective",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 migrations apply landslide-db --local",
+    "test": "node --experimental-strip-types scripts/test-stations.ts && node --experimental-strip-types scripts/test-knowledge.ts"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

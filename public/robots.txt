@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 網域確認後再改成正式網址
+Sitemap: https://landslide.hunglun.com/sitemap.xml

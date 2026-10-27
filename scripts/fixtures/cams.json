@@ -1,0 +1,422 @@
+[
+ {
+  "StationName": "九份二山",
+  "Name": "中游攝影機",
+  "Longitude": "120.8552",
+  "Latitude": "23.95073",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/2/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "九份二山",
+  "Name": "上游攝影機",
+  "Longitude": "120.8561",
+  "Latitude": "23.95028",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/2/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "九份二山",
+  "Name": "下游全景式攝影機",
+  "Longitude": "120.8569",
+  "Latitude": "23.95199",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/2/6/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "上安",
+  "Name": "全景式攝影機",
+  "Longitude": "120.8756",
+  "Latitude": "23.72506",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/4/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大粗坑",
+  "Name": "下游攝影機",
+  "Longitude": "121.837",
+  "Latitude": "25.09053",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/7/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大粗坑",
+  "Name": "上游全景式攝影機",
+  "Longitude": "121.84",
+  "Latitude": "25.09101",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/7/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大粗坑",
+  "Name": "下游攝影機-2",
+  "Longitude": "121.837",
+  "Latitude": "25.09069",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/7/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大鳥",
+  "Name": "崩塌地攝影機",
+  "Longitude": "120.91",
+  "Latitude": "22.38982",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/21/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大鳥",
+  "Name": "中游攝影機",
+  "Longitude": "120.9092",
+  "Latitude": "22.39012",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/21/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大鳥",
+  "Name": "下游攝影機",
+  "Longitude": "120.9099",
+  "Latitude": "22.3888",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/21/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大鳥",
+  "Name": "沉砂池攝影機",
+  "Longitude": "120.9101",
+  "Latitude": "22.38923",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/21/5/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大興",
+  "Name": "下游攝影機",
+  "Longitude": "121.3802",
+  "Latitude": "23.64091",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/11/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "大興",
+  "Name": "上游全景式攝影機",
+  "Longitude": "121.3777",
+  "Latitude": "23.64216",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/11/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "火炎山",
+  "Name": "火炎山攝影機",
+  "Longitude": "120.7287",
+  "Latitude": "24.35587",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/26/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "白布帆",
+  "Name": "全景式攝影機",
+  "Longitude": "120.9055",
+  "Latitude": "24.29823",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/1/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "來義",
+  "Name": "匯流口攝影機",
+  "Longitude": "120.6842",
+  "Latitude": "22.52715",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/20/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "來義",
+  "Name": "主流攝影機",
+  "Longitude": "120.6763",
+  "Latitude": "22.52607",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/20/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "來義",
+  "Name": "潛勢溪流攝影機",
+  "Longitude": "120.676",
+  "Latitude": "22.5244",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/20/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "和中",
+  "Name": "上游攝影機",
+  "Longitude": "121.742",
+  "Latitude": "24.27402",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/25/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "和中",
+  "Name": "中游攝影機",
+  "Longitude": "121.7422",
+  "Latitude": "24.27382",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/25/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "和中",
+  "Name": "下游攝影機",
+  "Longitude": "121.743",
+  "Latitude": "24.27352",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/25/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "坪頂",
+  "Name": "停車場攝影機",
+  "Longitude": "120.6379",
+  "Latitude": "23.75286",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/14/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "坪頂",
+  "Name": "邊坡攝影機(菜園)",
+  "Longitude": "120.637",
+  "Latitude": "23.75257",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/14/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "坪頂",
+  "Name": "入口處攝影機",
+  "Longitude": "120.6383",
+  "Latitude": "23.75386",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/14/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "松鶴",
+  "Name": "下游攝影機",
+  "Longitude": "120.9857",
+  "Latitude": "24.17664",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/13/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "松鶴",
+  "Name": "上游全景式攝影機",
+  "Longitude": "120.9858",
+  "Latitude": "24.17662",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/13/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "羌黃坑",
+  "Name": "上游攝影機",
+  "Longitude": "120.538",
+  "Latitude": "23.06977",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/18/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "羌黃坑",
+  "Name": "中游攝影機",
+  "Longitude": "120.537",
+  "Latitude": "23.07184",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/18/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "羌黃坑",
+  "Name": "下游攝影機",
+  "Longitude": "120.5357",
+  "Latitude": "23.074",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/18/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "南豐",
+  "Name": "中游前段攝影機",
+  "Longitude": "121.0872",
+  "Latitude": "24.01981",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/24/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "南豐",
+  "Name": "中游後段攝影機",
+  "Longitude": "121.0884",
+  "Latitude": "24.01739",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/24/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "南豐",
+  "Name": "下游攝影機",
+  "Longitude": "121.0892",
+  "Latitude": "24.01331",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/24/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "南豐",
+  "Name": "中游鋼索攝影機",
+  "Longitude": "121.0881",
+  "Latitude": "24.01739",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/24/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "南豐",
+  "Name": "南豐加油站攝影機",
+  "Longitude": "121.0858",
+  "Latitude": "24.00337",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/24/5/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "射馬干",
+  "Name": "上游攝影機",
+  "Longitude": "121.037",
+  "Latitude": "22.7255",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/9/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "霍薩溪攝影機",
+  "Longitude": "120.8564",
+  "Latitude": "23.52833",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "愛玉子溪下游攝影機",
+  "Longitude": "120.8564",
+  "Latitude": "23.52853",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "出水溪下游攝影機",
+  "Longitude": "120.8602",
+  "Latitude": "23.5267",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "愛玉子溪上游攝影機-1",
+  "Longitude": "120.8533",
+  "Latitude": "23.52415",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/5/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "出水溪上游攝影機-1",
+  "Longitude": "120.8603",
+  "Latitude": "23.52659",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/6/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "出水溪上游攝影機-2",
+  "Longitude": "120.8603",
+  "Latitude": "23.52655",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/7/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "流速計攝影機",
+  "Longitude": "120.8603",
+  "Latitude": "23.52655",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/8/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "神木",
+  "Name": "愛玉子溪上游攝影機-2",
+  "Longitude": "120.8533",
+  "Latitude": "23.52415",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/3/9/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "郡坑",
+  "Name": "上游攝影機",
+  "Longitude": "120.8711",
+  "Latitude": "23.74022",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/5/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "郡坑",
+  "Name": "下游攝影機",
+  "Longitude": "120.8704",
+  "Latitude": "23.73965",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/5/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "寒溪",
+  "Name": "寒溪攝影機",
+  "Longitude": "121.6859",
+  "Latitude": "24.60891",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/27/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "寒溪",
+  "Name": "寒溪全景式攝影機",
+  "Longitude": "121.6846",
+  "Latitude": "24.59753",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/27/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "華山",
+  "Name": " 中游攝影機",
+  "Longitude": "120.6091",
+  "Latitude": "23.5932",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/10/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "華山",
+  "Name": "上游攝影機",
+  "Longitude": "120.6115",
+  "Latitude": "23.59254",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/10/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "華山",
+  "Name": "下游攝影機",
+  "Longitude": "120.6068",
+  "Latitude": "23.59314",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/10/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "華山",
+  "Name": "華山橋下游攝影機",
+  "Longitude": "120.5989",
+  "Latitude": "23.59361",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/10/6/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "華山",
+  "Name": "華山橋上游攝影機",
+  "Longitude": "120.5989",
+  "Latitude": "23.59357",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/10/7/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "鳳義坑",
+  "Name": "下游攝影機",
+  "Longitude": "121.4269",
+  "Latitude": "23.74241",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/8/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "鳳義坑",
+  "Name": "上游全景式攝影機",
+  "Longitude": "121.4262",
+  "Latitude": "23.74186",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/8/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "豐山",
+  "Name": "乾坑溪下游攝影機",
+  "Longitude": "120.7456",
+  "Latitude": "23.59057",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/12/1/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "豐山",
+  "Name": "野溪攝影機",
+  "Longitude": "120.7446",
+  "Latitude": "23.59101",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/12/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "豐山",
+  "Name": "乾坑溪上游攝影機",
+  "Longitude": "120.7454",
+  "Latitude": "23.59054",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/12/3/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "豐丘",
+  "Name": "下游攝影機",
+  "Longitude": "120.8755",
+  "Latitude": "23.66731",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/6/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "豐丘",
+  "Name": "上游全景式攝影機",
+  "Longitude": "120.877",
+  "Latitude": "23.66839",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/6/4/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ },
+ {
+  "StationName": "蘇樂",
+  "Name": "上游攝影機",
+  "Longitude": "121.3597",
+  "Latitude": "24.70069",
+  "URL": "https://img.ardswc.gov.tw/opendata/api/v1/debris/stations/15/2/lastest/7DF2161A-2237-4399-B01D-FBBB73135E6C"
+ }
+]

@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "landslide-detective",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-01",
+  "observability": { "enabled": true },
+  // 網頁（public/）和 API 同一支 Worker：只有 /api/* 與 /admin/* 先進程式，其他直接回靜態檔
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/admin/*"]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "landslide-db", "database_id": "5d9d318e-c447-4952-a443-0e73a71d98e7" }
+  ],
+  // 網址一律 hunglun.com，不要 workers.dev 與預覽網址（Steve 2026-10-21 規定）。
+  // 自訂網域 landslide.hunglun.com 用帳號層級 API 綁（PUT /accounts/{id}/workers/domains），不寫 routes：
+  // routes 的 custom_domain 要 zone 層級權限，hunglun2026 的 token 沒有，會讓部署最後一步失敗。
+  "workers_dev": false,
+  "preview_urls": false,
+  // 每天台灣 03:00（UTC 19:00）查一次資料集有沒有更新
+  "triggers": { "crons": ["0 19 * * *"] },
+  "vars": {
+    "DATASET_ID": "9327",
+    "APP_VERSION": "1.0.0"
+  }
+  // secrets（wrangler secret put）：NTFY_TOPIC、ADMIN_TOKEN
+}

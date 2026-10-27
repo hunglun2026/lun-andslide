@@ -1,0 +1,11 @@
+# 靜態檔快取（Cloudflare Workers 靜態資源會讀這個檔）。HTML 不在這裡設定，維持每次都問有沒有新版。
+# 字型檔名帶內容雜湊，內容一變網址就變，可以放心快取一年。
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+# CSS／JS 網址帶 ?v=N（改了要全站升版）；JSON 沒帶版號，最晚隔天生效
+/css/*
+  Cache-Control: public, max-age=86400
+/js/*
+  Cache-Control: public, max-age=86400
+/img/*
+  Cache-Control: public, max-age=86400

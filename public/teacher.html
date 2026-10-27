@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>教師專區｜土石流小偵探</title>
+<meta name="description" content="土石流防災教學的備課與上課工具：學習單、全螢幕上課模式、搶答計分板、班級連結與 QR 碼、兩個現成課程包。">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/ls-sans-0-a378cba1.woff2" crossorigin>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/style.css?v=8">
+</head>
+<body data-page="teacher">
+<main>
+  <h1>🍎 教師專區</h1>
+  <p class="lead">備課、上課、評量都在這裡。所有資料只存在這台電腦，不會上傳。第一次用請看<a href="/help#teacher">使用說明</a>。</p>
+
+  <div class="tabs noprint" role="tablist" aria-label="老師工具">
+    <button class="tab" role="tab" aria-selected="true" data-tab="sheet">🖨️ 學習單</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="slides">🎬 上課模式</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="board">🏆 搶答計分板</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="link">🔗 班級連結</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="guide">📚 課程包</button>
+  </div>
+
+  <section id="tab-sheet" class="panel">
+    <div class="form-row noprint">
+      <label>主題<select id="theme"></select></label>
+      <label>題數<select id="num"><option>5</option><option selected>8</option><option>10</option><option>12</option></select></label>
+      <label style="grid-auto-flow:column;align-items:center;gap:8px"><input type="checkbox" id="withAns" checked style="width:24px;height:24px"> 附答案頁</label>
+    </div>
+    <p class="noprint"><button class="btn primary" id="gen" disabled>產生學習單</button> <button class="btn" id="print" disabled>列印</button></p>
+    <div id="sheet" class="sheet" hidden></div>
+  </section>
+
+  <section id="tab-slides" class="panel" hidden>
+    <p class="noprint">用「學習單」分頁選好的主題與題數出題。</p>
+    <p class="noprint"><button class="btn primary big" id="cm" disabled>🎬 全螢幕上課模式</button></p>
+    <p class="noprint lead">上課模式：題目、倒數和各組計分在同一個畫面，會自動念題。只用簡報筆就能操作：「下一頁」揭曉答案、再按換下一題；黑畫面鍵（B）開始倒數；鍵盤數字 1 到 6 幫該組加分、R 隨機抽一組。</p>
+  </section>
+
+  <section id="tab-board" class="panel" hidden></section>
+  <section id="tab-link" class="panel" hidden></section>
+
+  <section id="tab-guide" class="panel" hidden>
+    <h2 style="margin-top:0">兩個現成課程包（每包 40 分鐘）</h2>
+    <p class="lead">按「一鍵帶入學習單」會自動選好主題並產生學習單，可直接列印。實際請依貴校課程計畫調整。</p>
+    <div class="packs">
+      <article class="pack">
+        <h3>👀 認識土石流前兆</h3>
+        <p><b>學習目標</b>：說出土石流是什麼、至少 3 個水保署列出的前兆，以及要往哪裡避難。</p>
+        <ol>
+          <li><b>暖身 5 分</b>：打開<a href="/watch">看溪觀察站</a>，投影一支鏡頭，請全班說說看到什麼（水清或濁、有沒有石頭樹枝）。</li>
+          <li><b>講解 10 分</b>：用<a href="/river">認識溪流</a>說明土石流的定義與三個區域，再看水保署列的 12 項前兆。</li>
+          <li><b>闖關 10 分</b>：全班玩<a href="/quiz#m=easy">闖關入門</a>，或用上課模式搶答。</li>
+          <li><b>練習 10 分</b>：學習單「土石流防災知識」。</li>
+          <li><b>回顧 5 分</b>：請學生說出要往哪裡避難、哪件事不能做。</li>
+        </ol>
+        <p><button class="btn primary" data-pack="knowledge">一鍵帶入學習單</button></p>
+      </article>
+      <article class="pack">
+        <h3>🏠 我的家鄉與防災</h3>
+        <p><b>學習目標</b>：查出自己縣市、鄉鎮有幾條潛勢溪流，說明風險等級的意思，知道潛勢不等於現在會發生。</p>
+        <ol>
+          <li><b>暖身 5 分</b>：問「你家在哪個縣市？你覺得有幾條潛勢溪流？」先猜再查。</li>
+          <li><b>查資料 15 分</b>：兩人一組用<a href="/streams">我的鄉鎮</a>查自己的縣市與鄉鎮，記下條數與各風險有幾條。</li>
+          <li><b>討論 10 分</b>：看「風險等級是什麼意思」，討論為什麼風險是看「發生可能性」和「影響住戶多不多」兩件事。</li>
+          <li><b>練習 10 分</b>：學習單「我的縣市」。</li>
+        </ol>
+        <p><button class="btn primary" data-pack="county">一鍵帶入學習單</button></p>
+      </article>
+    </div>
+  </section>
+</main>
+<script src="/js/data.js?v=8"></script>
+<script src="/js/knowledge.js?v=8"></script>
+<script src="/js/layout.js?v=8"></script>
+<script src="/js/fx.js?v=8"></script>
+<script src="/js/speak.js?v=8"></script>
+<script src="/js/zhuyin.js?v=8"></script>
+<script src="/js/progress.js?v=8"></script>
+<script src="/js/vendor/qrcode.js?v=8"></script>
+<script src="/js/p-board.js?v=8"></script>
+<script src="/js/p-classlink.js?v=8"></script>
+<script src="/js/p-class.js?v=8"></script>
+<script src="/js/p-teacher.js?v=8"></script>
+</body>
+</html>
