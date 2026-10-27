@@ -17,18 +17,19 @@ export async function handleCam(id: string, env: Env, ctx: ExecutionContext): Pr
   if (!row) return new Response(null, { status: 404 });
   if (!row.url) return new Response(null, { status: 204, headers: { "cache-control": "public, max-age=3600" } }); // 這支沒有直接畫面
 
+  // 取不到一律回 204（前端顯示「現在看不到」），原因寫在 x-cam-error 標頭，排錯時 curl -D - 就看得到
+  const fail = (why: string) => new Response(null, { status: 204, headers: { "cache-control": "public, max-age=30", "x-cam-error": why } });
   let up: Response;
   try {
-    up = await fetch(row.url, { headers: { "User-Agent": "Mozilla/5.0 landslide-detective" }, signal: AbortSignal.timeout(12000) });
-  } catch {
-    return new Response(null, { status: 204, headers: { "cache-control": "public, max-age=30" } });
+    up = await fetch(row.url, { headers: { "User-Agent": "Mozilla/5.0 landslide-detective" }, signal: AbortSignal.timeout(25000) });
+  } catch (e) {
+    return fail(`fetch失敗：${e instanceof Error ? e.message : String(e)}`);
   }
   const type = up.headers.get("content-type") ?? "";
-  if (!up.ok || !/^image\/jpeg/i.test(type)) {
-    return new Response(null, { status: 204, headers: { "cache-control": "public, max-age=30" } });
-  }
+  if (!up.ok) return fail(`上游 HTTP ${up.status}`);
+  if (!/^image\/jpeg/i.test(type)) return fail(`上游不是 JPEG：${type.slice(0, 40)}`);
   const body = await up.arrayBuffer();
-  if (body.byteLength < 2000) return new Response(null, { status: 204, headers: { "cache-control": "public, max-age=30" } });
+  if (body.byteLength < 2000) return fail(`畫面太小（${body.byteLength} 位元組）`);
 
   const res = new Response(body, {
     headers: {
