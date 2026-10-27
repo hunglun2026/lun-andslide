@@ -1,6 +1,9 @@
 import type { Env } from "./env";
 import { toCams, type Cam, type MoaCam, type RawCam } from "./stations";
 import { notifyError } from "./notify";
+// 縣市、行政區、地點的內建快照（2026-10-27 從官方 JSON 存下）。data.moa.gov.tw 擋 Cloudflare Workers（回 522），線上抓不到時用它。
+// 這些資料很少變（資料集最後更新 2025-03），要更新就把新的官方 JSON 覆蓋這個檔。
+import moaSnapshot from "./moa-snapshot.json";
 
 const META_URL = (id: string) => `https://data.gov.tw/api/v2/rest/dataset/${id}`;
 // 直接 JPG 的影像網址只有這支 API 有；縣市、行政區、地點在中繼資料指的官方 JSON（見 stations.ts 開頭）
@@ -48,12 +51,18 @@ export async function runSync(env: Env, force = false): Promise<SyncResult> {
 
     const moaUrl: string = (r.distribution ?? []).find((d: any) => /json/i.test(d.resourceFormat))?.resourceDownloadUrl ?? MOA_FALLBACK;
     const fema = (await getJson(FEMA_API, "影像網址資料")) as RawCam[];
-    const moa = (await getJson(moaUrl, "觀測站地點資料")) as MoaCam[];
+    let moa: MoaCam[], moaNote = "";
+    try {
+      moa = (await getJson(moaUrl, "觀測站地點資料")) as MoaCam[];
+    } catch (e) {
+      moa = moaSnapshot as MoaCam[]; // 地點資料線上抓不到不算失敗：縣市、地點幾乎不變，用快照，影像網址仍是最新的
+      moaNote = `；地點資料線上取得失敗（${e instanceof Error ? e.message : String(e)}），改用內建快照`;
+    }
     const cams = toCams(fema, moa);
     if (cams.length < MIN_ROWS) throw new Error(`只解析出 ${cams.length} 支鏡頭（少於 ${MIN_ROWS}），疑似來源異常，已保留舊資料`);
 
     await importCams(env, cams);
-    res = { status: "ok", message: `匯入 ${cams.length} 支鏡頭（影像 ${fema.length} 列、地點 ${moa.length} 列）`, modified, cams: cams.length };
+    res = { status: "ok", message: `匯入 ${cams.length} 支鏡頭（影像 ${fema.length} 列、地點 ${moa.length} 列）${moaNote}`, modified, cams: cams.length };
     await log(env, res);
     return res;
   } catch (e) {
