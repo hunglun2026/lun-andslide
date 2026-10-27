@@ -74,33 +74,45 @@
       if (onState) onState(state);
     };
     if (!cam.live) { say("none", "這支鏡頭沒有提供即時畫面"); return box; }
-    say("loading", "畫面載入中⋯可能要等幾秒");
-    fetch("/api/cam/" + encodeURIComponent(cam.id))
-      .then(async (r) => {
-        if (r.status !== 200) throw new Error("no image");
-        const blob = await r.blob();
-        const url = URL.createObjectURL(blob);
-        const img = new Image();
-        img.alt = cam.station + cam.name + "現在的畫面";
-        img.onload = () => {
-          let dark = false;
-          try {
-            const c = document.createElement("canvas");
-            c.width = 32; c.height = 18; // 縮小再算，快又穩
-            const g = c.getContext("2d");
-            g.drawImage(img, 0, 0, 32, 18);
-            const d = g.getImageData(0, 0, 32, 14).data; // 底部 4 列有時間文字，不算
-            let sum = 0;
-            for (let i = 0; i < d.length; i += 4) sum += d[i] * 0.299 + d[i + 1] * 0.587 + d[i + 2] * 0.114;
-            dark = sum / (d.length / 4) < 28;
-          } catch (e) { /* 算不出來就當作正常 */ }
-          box.prepend(img);
-          say(dark ? "dark" : "ok", dark ? "畫面很暗，可能是晚上或鏡頭被遮住" : "");
-        };
-        img.onerror = () => say("none", "現在看不到這支鏡頭");
-        img.src = url;
-      })
-      .catch(() => say("none", "現在看不到這支鏡頭"));
+    // 水保署的伺服器有時要等十幾秒甚至超時，所以失敗時給「再試一次」，不讓學生只能重新整理整頁
+    const fail = () => {
+      say("none", "現在看不到這支鏡頭（水保署的伺服器有時很慢）");
+      const b = document.createElement("button");
+      b.className = "btn";
+      b.textContent = "再試一次";
+      b.onclick = () => { box.replaceChildren(); go(); };
+      box.appendChild(b);
+    };
+    const go = () => {
+      say("loading", "畫面載入中⋯可能要等幾秒，最多約半分鐘");
+      fetch("/api/cam/" + encodeURIComponent(cam.id))
+        .then(async (r) => {
+          if (r.status !== 200) throw new Error("no image");
+          const blob = await r.blob();
+          const url = URL.createObjectURL(blob);
+          const img = new Image();
+          img.alt = cam.station + cam.name + "現在的畫面";
+          img.onload = () => {
+            let dark = false;
+            try {
+              const c = document.createElement("canvas");
+              c.width = 32; c.height = 18; // 縮小再算，快又穩
+              const g = c.getContext("2d");
+              g.drawImage(img, 0, 0, 32, 18);
+              const d = g.getImageData(0, 0, 32, 14).data; // 底部 4 列有時間文字，不算
+              let sum = 0;
+              for (let i = 0; i < d.length; i += 4) sum += d[i] * 0.299 + d[i + 1] * 0.587 + d[i + 2] * 0.114;
+              dark = sum / (d.length / 4) < 28;
+            } catch (e) { /* 算不出來就當作正常 */ }
+            box.prepend(img);
+            say(dark ? "dark" : "ok", dark ? "畫面很暗，可能是晚上或鏡頭被遮住" : "");
+          };
+          img.onerror = fail;
+          img.src = url;
+        })
+        .catch(fail);
+    };
+    go();
     return box;
   }
 
