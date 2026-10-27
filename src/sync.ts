@@ -14,8 +14,14 @@ const getJson = async (url: string, what: string) => {
   return data;
 };
 const MIN_ROWS = 20; // 低於這個筆數視為來源異常，保留舊資料（平常 60 支）
-const get = (url: string) =>
-  fetch(url, { headers: { "User-Agent": "Mozilla/5.0 landslide-detective" }, signal: AbortSignal.timeout(20000) });
+// 失敗時把來源網站名稱寫進錯誤訊息（ntfy 通知與同步紀錄才看得出是哪一個來源逾時或被擋）
+const get = async (url: string) => {
+  try {
+    return await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 landslide-detective" }, signal: AbortSignal.timeout(20000) });
+  } catch (e) {
+    throw new Error(`連不上 ${new URL(url).host}：${e instanceof Error ? e.message : String(e)}`);
+  }
+};
 
 export interface SyncResult { status: "ok" | "skipped" | "error"; message: string; modified?: string; cams?: number }
 
