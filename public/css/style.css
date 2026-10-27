@@ -520,3 +520,9 @@ footer.foot .foot-copy{margin:.8em auto 0;max-width:48em;line-height:1.7;color:#
 .mapwrap canvas{background:#dfeaf3;border:3px solid var(--line);border-radius:14px;max-width:100%;cursor:crosshair;touch-action:manipulation}
 .trio{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .trio-i{margin:0}.trio-i figcaption{padding:4px 0}
+/* 首頁：三個入口按鈕排成一列、統計數字四格並排 */
+.hero .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:14px}
+#stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:18px 0}
+#stats .fact{text-align:center}
+#stats .fact h4{font-size:2rem;margin:0;color:var(--green-d);line-height:1.2}
+#stats .fact p{margin:.2em 0 0}
