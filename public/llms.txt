@@ -1,0 +1,18 @@
+# 土石流小偵探
+
+> 看溪觀察站、認識家鄉的溪流、玩防災闖關，學會保護自己。
+
+鴻綸科技（https://www.hunglun.com/）製作的免費學習網站，免註冊、免安裝，收錄於官網學習專區 https://www.hunglun.com/tools/games 。
+
+## 頁面
+- [使用說明](https://landslide.hunglun.com/help): 老師 3 分鐘上手，每個工具怎麼用，學生與家長常見問題。
+- [土石流小偵探](https://landslide.hunglun.com/home): 用農業部水保署的開放資料，看溪邊鏡頭的即時畫面、查家鄉有幾條土石流潛勢溪流，並用闖關學會土石流防災。給國小老師課堂使用，免註冊。
+- [土石流小偵探](https://landslide.hunglun.com/): 看溪觀察站、認識家鄉的溪流、玩防災闖關，學會保護自己。
+- [臺灣地圖](https://landslide.hunglun.com/map): 在臺灣地圖上看土石流潛勢溪流與觀測站鏡頭，並玩找站點遊戲。
+- [資料來源與授權](https://landslide.hunglun.com/open-data): 本站使用的政府開放資料、授權與使用限制。
+- [探險護照](https://landslide.hunglun.com/passport): 看你看過幾支鏡頭、查過幾個鄉鎮、拿到哪些徽章。
+- [闖關](https://landslide.hunglun.com/quiz): 土石流防災知識闖關，每題都有水保署的出處。
+- [認識溪流](https://landslide.hunglun.com/river): 土石流是什麼、三個區域、12 項前兆與怎麼避難，並排看同一條溪的上中下游鏡頭。
+- [我的鄉鎮](https://landslide.hunglun.com/streams): 選縣市和鄉鎮，看看家鄉附近有幾條土石流潛勢溪流、風險怎麼分。
+- [教師專區](https://landslide.hunglun.com/teacher): 土石流防災教學的備課與上課工具：學習單、全螢幕上課模式、搶答計分板、班級連結與 QR 碼、兩個現成課程包。
+- [看溪觀察站](https://landslide.hunglun.com/watch): 看水保署溪邊鏡頭現在拍到的畫面，學著觀察溪流。
